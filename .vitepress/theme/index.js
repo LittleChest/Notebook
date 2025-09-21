@@ -36,7 +36,9 @@ export default {
   },
   enhanceApp: (ctx) => {
     ctx.app.use(NolebaseInlineLinkPreviewPlugin);
-    ctx.app.use(NolebaseGitChangelogPlugin);
+    ctx.app.use(NolebaseGitChangelogPlugin, {
+      hideContributorsHeader: true,
+    });
     vitepressNprogress(ctx);
   },
 };

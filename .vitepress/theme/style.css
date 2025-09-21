@@ -4,3 +4,7 @@
   --vp-c-brand-3: #db2777;
   --vp-c-brand-soft: rgba(244, 114, 182, 0.14);
 }
+
+.vp-nolebase-git-changelog-contributors {
+  display: none !important;
+}

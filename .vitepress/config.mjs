@@ -24,9 +24,6 @@ export default defineConfig({
         "https://github.com/LittleChest/Documentation/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
-    lastUpdated: {
-      text: "最后更新于",
-    },
     docFooter: {
       prev: "上一页",
       next: "下一页",
