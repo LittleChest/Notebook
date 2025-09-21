@@ -30,4 +30,20 @@ export default defineConfig({
     returnToTopLabel: "返回顶部",
     langMenuLabel: "选择语言",
   },
+
+  vite: {
+    optimizeDeps: {
+      exclude: [
+        "@nolebase/vitepress-plugin-enhanced-readabilities/client",
+        "vitepress",
+        "@nolebase/ui",
+      ],
+    },
+    ssr: {
+      noExternal: [
+        "@nolebase/vitepress-plugin-enhanced-readabilities",
+        "@nolebase/ui",
+      ],
+    },
+  },
 });
