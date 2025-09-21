@@ -10,22 +10,25 @@ importers:
     devDependencies:
       '@nolebase/vitepress-plugin-enhanced-mark':
         specifier: ^2.18.2
-        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))
       '@nolebase/vitepress-plugin-enhanced-readabilities':
         specifier: ^2.18.2
-        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))(vue@3.5.21)
       '@nolebase/vitepress-plugin-highlight-targeted-heading':
         specifier: ^2.18.2
-        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))
       '@nolebase/vitepress-plugin-inline-link-preview':
         specifier: ^2.18.2
-        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))(vue@3.5.21)
       prettier:
         specifier: 3.6.2
         version: 3.6.2
       vitepress:
         specifier: 2.0.0-alpha.12
-        version: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
+        version: 2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6)
+      vitepress-plugin-nprogress:
+        specifier: ^0.1.0
+        version: 0.1.0
 
 packages:
 
@@ -693,6 +696,9 @@ packages:
     engines: {node: '>= 4.4.x'}
     hasBin: true
 
+  nprogress@0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+
   oniguruma-parser@0.12.1:
     resolution: {integrity: sha512-8Unqkvk1RYc6yq2WBYRj4hdnsAxVze8i7iPfQr8e4uSP3tRv0rpZcbGUDvxfQQcdwHt/e9PrMvGCsa8OqG9X3w==}
 
@@ -865,6 +871,9 @@ packages:
       yaml:
         optional: true
 
+  vitepress-plugin-nprogress@0.1.0:
+    resolution: {integrity: sha512-5tuvHKPWQLuwfy+xutwGusHV4qJ/ZdbVNaoogpL3DWhmvIAMLihdUwltdv1sQp4KEvCglTW8osvslPbrKnmx1Q==}
+
   vitepress@2.0.0-alpha.12:
     resolution: {integrity: sha512-yZwCwRRepcpN5QeAhwSnEJxS3I6zJcVixqL1dnm6km4cnriLpQyy2sXQDsE5Ti3pxGPbhU51nTMwI+XC1KNnJg==}
     hasBin: true
@@ -1016,44 +1025,44 @@ snapshots:
     dependencies:
       markdown-it: 14.1.0
 
-  '@nolebase/ui@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)':
+  '@nolebase/ui@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))(vue@3.5.21)':
     dependencies:
       '@iconify-json/octicon': 1.2.14
       less: 4.4.1
-      vitepress: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
+      vitepress: 2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6)
       vue: 3.5.21
 
-  '@nolebase/vitepress-plugin-enhanced-mark@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))':
+  '@nolebase/vitepress-plugin-enhanced-mark@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))':
     dependencies:
       less: 4.4.1
-      vitepress: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
+      vitepress: 2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6)
 
-  '@nolebase/vitepress-plugin-enhanced-readabilities@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)':
+  '@nolebase/vitepress-plugin-enhanced-readabilities@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))(vue@3.5.21)':
     dependencies:
       '@iconify-json/carbon': 1.2.13
       '@iconify-json/icon-park-outline': 1.2.4
-      '@nolebase/ui': 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)
+      '@nolebase/ui': 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))(vue@3.5.21)
       less: 4.4.1
-      vitepress: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
+      vitepress: 2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6)
     transitivePeerDependencies:
       - vue
 
-  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))':
+  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))':
     dependencies:
       less: 4.4.1
-      vitepress: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
+      vitepress: 2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6)
 
-  '@nolebase/vitepress-plugin-inline-link-preview@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)':
+  '@nolebase/vitepress-plugin-inline-link-preview@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))(vue@3.5.21)':
     dependencies:
       '@iconify-json/icon-park-outline': 1.2.4
       '@iconify-json/octicon': 1.2.14
       '@iconify-json/svg-spinners': 1.2.4
       '@nolebase/markdown-it-element-transform': 2.18.2(markdown-it@14.1.0)
-      '@nolebase/ui': 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)
+      '@nolebase/ui': 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6))(vue@3.5.21)
       less: 4.4.1
       markdown-it: 14.1.0
       markdown-it-attrs: 4.3.1(markdown-it@14.1.0)
-      vitepress: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
+      vitepress: 2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6)
     transitivePeerDependencies:
       - vue
 
@@ -1273,13 +1282,14 @@ snapshots:
       '@vueuse/shared': 13.9.0(vue@3.5.21)
       vue: 3.5.21
 
-  '@vueuse/integrations@13.9.0(focus-trap@7.6.5)(vue@3.5.21)':
+  '@vueuse/integrations@13.9.0(focus-trap@7.6.5)(nprogress@0.2.0)(vue@3.5.21)':
     dependencies:
       '@vueuse/core': 13.9.0(vue@3.5.21)
       '@vueuse/shared': 13.9.0(vue@3.5.21)
       vue: 3.5.21
     optionalDependencies:
       focus-trap: 7.6.5
+      nprogress: 0.2.0
 
   '@vueuse/metadata@13.9.0': {}
 
@@ -1490,6 +1500,8 @@ snapshots:
       sax: 1.4.1
     optional: true
 
+  nprogress@0.2.0: {}
+
   oniguruma-parser@0.12.1: {}
 
   oniguruma-to-es@4.3.3:
@@ -1660,7 +1672,11 @@ snapshots:
       fsevents: 2.3.3
       less: 4.4.1
 
-  vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6):
+  vitepress-plugin-nprogress@0.1.0:
+    dependencies:
+      nprogress: 0.2.0
+
+  vitepress@2.0.0-alpha.12(less@4.4.1)(nprogress@0.2.0)(postcss@8.5.6):
     dependencies:
       '@docsearch/css': 4.0.1
       '@docsearch/js': 4.0.1
@@ -1673,7 +1689,7 @@ snapshots:
       '@vue/devtools-api': 8.0.2
       '@vue/shared': 3.5.21
       '@vueuse/core': 13.9.0(vue@3.5.21)
-      '@vueuse/integrations': 13.9.0(focus-trap@7.6.5)(vue@3.5.21)
+      '@vueuse/integrations': 13.9.0(focus-trap@7.6.5)(nprogress@0.2.0)(vue@3.5.21)
       focus-trap: 7.6.5
       mark.js: 8.11.1
       minisearch: 7.2.0

@@ -17,6 +17,9 @@ import "@nolebase/vitepress-plugin-inline-link-preview/client/style.css";
 
 import "@nolebase/vitepress-plugin-enhanced-mark/client/style.css";
 
+import vitepressNprogress from "vitepress-plugin-nprogress";
+import "vitepress-plugin-nprogress/lib/css/index.css";
+
 /** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
@@ -28,7 +31,8 @@ export default {
       "layout-top": () => [h(NolebaseHighlightTargetedHeading)],
     });
   },
-  enhanceApp({ app }) {
-    app.use(NolebaseInlineLinkPreviewPlugin);
+  enhanceApp: (ctx) => {
+    ctx.app.use(NolebaseInlineLinkPreviewPlugin);
+    vitepressNprogress(ctx);
   },
 };
