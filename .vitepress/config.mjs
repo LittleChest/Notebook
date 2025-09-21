@@ -1,5 +1,7 @@
 import { defineConfig } from "vitepress";
 
+import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
+
 export default defineConfig({
   title: "LittleChest 的笔记本",
   description: "此笔记本记录了 littlew.top 的文档与笔记。",
@@ -30,10 +32,15 @@ export default defineConfig({
     returnToTopLabel: "返回顶部",
     langMenuLabel: "选择语言",
   },
-
+  markdown: {
+    config(md) {
+      md.use(InlineLinkPreviewElementTransform);
+    },
+  },
   vite: {
     optimizeDeps: {
       exclude: [
+        "@nolebase/vitepress-plugin-inline-link-preview/client",
         "@nolebase/vitepress-plugin-enhanced-readabilities/client",
         "vitepress",
         "@nolebase/ui",
@@ -41,6 +48,7 @@ export default defineConfig({
     },
     ssr: {
       noExternal: [
+        "@nolebase/vitepress-plugin-inline-link-preview/client",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
         "@nolebase/vitepress-plugin-enhanced-readabilities",
         "@nolebase/ui",
