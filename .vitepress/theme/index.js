@@ -15,6 +15,9 @@ import "@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css";
 import { NolebaseInlineLinkPreviewPlugin } from "@nolebase/vitepress-plugin-inline-link-preview/client";
 import "@nolebase/vitepress-plugin-inline-link-preview/client/style.css";
 
+import { NolebaseGitChangelogPlugin } from "@nolebase/vitepress-plugin-git-changelog/client";
+import "@nolebase/vitepress-plugin-git-changelog/client/style.css";
+
 import "@nolebase/vitepress-plugin-enhanced-mark/client/style.css";
 
 import vitepressNprogress from "vitepress-plugin-nprogress";
@@ -33,6 +36,7 @@ export default {
   },
   enhanceApp: (ctx) => {
     ctx.app.use(NolebaseInlineLinkPreviewPlugin);
+    ctx.app.use(NolebaseGitChangelogPlugin);
     vitepressNprogress(ctx);
   },
 };

@@ -2,6 +2,11 @@ import { defineConfig } from "vitepress";
 
 import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
 
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
+} from "@nolebase/vitepress-plugin-git-changelog/vite";
+
 export default defineConfig({
   title: "LittleChest 的笔记本",
   description: "此笔记本记录了 littlew.top 的文档与笔记。",
@@ -16,7 +21,7 @@ export default defineConfig({
     },
     editLink: {
       pattern:
-        "https://github.com/LittleChest/Documention/edit/main/docs/:path",
+        "https://github.com/LittleChest/Documentation/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
     lastUpdated: {
@@ -38,6 +43,12 @@ export default defineConfig({
     },
   },
   vite: {
+    plugins: [
+      GitChangelog({
+        repoURL: () => "https://github.com/LittleChest/Documentation",
+      }),
+      GitChangelogMarkdownSection(),
+    ],
     optimizeDeps: {
       exclude: [
         "@nolebase/vitepress-plugin-inline-link-preview/client",
