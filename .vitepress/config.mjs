@@ -59,7 +59,7 @@ export default defineConfig({
     },
     ssr: {
       noExternal: [
-        "@nolebase/vitepress-plugin-inline-link-preview/client",
+        "@nolebase/vitepress-plugin-inline-link-preview",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
         "@nolebase/vitepress-plugin-enhanced-readabilities",
         "@nolebase/ui",
