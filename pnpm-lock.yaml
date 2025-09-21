@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@nolebase/vitepress-plugin-enhanced-mark':
+        specifier: ^2.18.2
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))
       '@nolebase/vitepress-plugin-enhanced-readabilities':
         specifier: ^2.18.2
         version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)
@@ -225,6 +228,11 @@ packages:
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
       vue: '>= 3.5.18'
+
+  '@nolebase/vitepress-plugin-enhanced-mark@2.18.2':
+    resolution: {integrity: sha512-MwdzJuUoGBZLuhKttXs5UX7APqYU37mBywle3hRAlythXIOrnCT1fQyU6zQ8SJCXkojuCUS3N3whQTA2Cmf16Q==}
+    peerDependencies:
+      vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
   '@nolebase/vitepress-plugin-enhanced-readabilities@2.18.2':
     resolution: {integrity: sha512-fDhdZBSJL2qs/1xac0PtJfU5UI7b36ffVPYgzM8Ig2NjqMJ7cBvrTTPGq03lUeMjK7GD7fItAKudaP+ZrtMg8w==}
@@ -964,6 +972,11 @@ snapshots:
       less: 4.4.1
       vitepress: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
       vue: 3.5.21
+
+  '@nolebase/vitepress-plugin-enhanced-mark@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))':
+    dependencies:
+      less: 4.4.1
+      vitepress: 2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6)
 
   '@nolebase/vitepress-plugin-enhanced-readabilities@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.1)(postcss@8.5.6))(vue@3.5.21)':
     dependencies:
