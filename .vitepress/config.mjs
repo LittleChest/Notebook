@@ -20,8 +20,7 @@ export default defineConfig({
       label: "目录",
     },
     editLink: {
-      pattern:
-        "https://github.com/LittleChest/Documentation/edit/main/docs/:path",
+      pattern: "https://github.com/LittleChest/Notebook/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
     docFooter: {
@@ -34,6 +33,9 @@ export default defineConfig({
     returnToTopLabel: "返回顶部",
     langMenuLabel: "选择语言",
   },
+  sitemap: {
+    hostname: "https://notebook.littlew.top",
+  },
   markdown: {
     config(md) {
       md.use(InlineLinkPreviewElementTransform);
@@ -42,7 +44,7 @@ export default defineConfig({
   vite: {
     plugins: [
       GitChangelog({
-        repoURL: () => "https://github.com/LittleChest/Documentation",
+        repoURL: () => "https://github.com/LittleChest/Notebook",
       }),
       GitChangelogMarkdownSection(),
     ],
