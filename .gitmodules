@@ -1,0 +1,4 @@
+[submodule "日记本"]
+	path = docs/日记本
+	url = https://github.com/LittleChest/Diary.git
+	branch = main
