@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 
+import docSidebar from "../docs/文档/sidebar";
 import diarySidebar from "../docs/日记本/sidebar";
 
 import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
@@ -19,6 +20,7 @@ export default defineConfig({
   metaChunk: true,
   themeConfig: {
     sidebar: {
+      "/文档/": docSidebar,
       "/日记本/": diarySidebar,
     },
     outline: {
