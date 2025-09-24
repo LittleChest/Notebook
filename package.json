@@ -16,6 +16,6 @@
     "@nolebase/vitepress-plugin-inline-link-preview": "^2.18.2",
     "prettier": "3.6.2",
     "vitepress": "2.0.0-alpha.12",
-    "vitepress-plugin-nprogress": "^0.1.0"
+    "vitepress-plugin-nprogress": "^0.1.1"
   }
 }
