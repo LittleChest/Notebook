@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # 欢迎
 
 欢迎回到文档页面！
