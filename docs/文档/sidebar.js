@@ -4,7 +4,7 @@ export default [
     text: "Infrastructure",
     collapsed: false,
     items: [
-      { text: "概述", link: "/文档/API" },
+      { text: "概述", link: "/文档/API/" },
       { text: "/auth", link: "/文档/API/-auth" },
       { text: "/user", link: "/文档/API/-user" },
     ],
