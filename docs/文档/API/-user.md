@@ -17,7 +17,7 @@
 
 | 状态码 | 类型             | 描述                   |
 | ------ | ---------------- | ---------------------- |
-| 200    | application/json | 返回用户与客户端信息。 |
+| 200    | application/json | 返回客户端与用户信息。 |
 | 500    | 无               | 发生内部错误。         |
 
 ## JSON 结构
@@ -32,7 +32,7 @@
 | id       | string 或 null | 当客户端已登入时，用户的 GitHub ID。                                |
 | username | string 或 null | 当客户端已登入时，用户的 GitHub 用户名。                            |
 | name     | string 或 null | 当客户端已登入时，用户的 GitHub 名称。                              |
-| trusted  | boolean        | 此用户是否为受信任用户。未登入时此值始终为 `false`。                |
+| trusted  | boolean        | 用户是否为受信任用户。未登入时此值始终为 `false`。                  |
 
 ### 示例
 
@@ -40,7 +40,7 @@
 
 ```json
 {
-  "ip": "1.1.1.1",
+  "ip": "2606:4700:4700::1",
   "asn": 13335,
   "asorg": "Cloudflare, Inc.",
   "colo": "TPE",
