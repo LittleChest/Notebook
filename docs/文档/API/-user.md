@@ -25,8 +25,8 @@
 | 属性       | 类型           | 描述                                                                |
 | ---------- | -------------- | ------------------------------------------------------------------- |
 | ip         | string         | 客户端 IPv4 或 IPv6 地址。                                          |
-| asn        | number         | IP 地址对应的自治系统编号（ASN）。                                  |
-| asorg      | string         | IP 地址对应的自治系统组织名称。                                     |
+| asn        | number 或 null | IP 地址对应的自治系统编号（ASN）。                                  |
+| asorg      | string 或 null | IP 地址对应的自治系统组织名称。                                     |
 | colo       | string         | 已连接的 [Cloudflare 数据中心](https://www.cloudflarestatus.com/)。 |
 | pseudo     | string 或 null | 当客户端使用 IPv6 时，Cloudflare 生成的 Pseudo IPv4 地址。          |
 | latitude   | string         | 根据 IP 地址推算的纬度。                                            |
